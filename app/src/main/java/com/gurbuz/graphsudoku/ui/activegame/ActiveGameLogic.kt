@@ -33,7 +33,7 @@ class ActiveGameLogic(
     }
 
     private fun onTileFocused(x: Int, y: Int) = launch {
-
+        viewModel.updateFocusState(x, y)
     }
 
     private fun onStop() {
